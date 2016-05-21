@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <!--[if lt IE 9]>
+   <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+   <![endif]--> 
+	<link href="style.css" rel="stylesheet" type="test/css">
+	<script src="myjs.js"></script>
+   <meta charset="utf-8">
+   <title>html5练习</title>
+ </head>
+ <body>
+  <div>
+  <!--width height 是他的属性-->
+    <video width="400" height="400" controls>
+	 <source src="movie.mp4" type="video/mp4">
+	 <source src="move.ogg" type="video/mp4">
+	 <source src="movie.ogg" type="vodeo/ogg">
+	 <source src="moie.webm" type="video/webm">
+	 您的浏览器不支持html5的video标签。
+	</video>
+	<div style="text-align:center">
+	<button onclick="playPause()">播放/停止</button>
+	<button onclick="markBig()">放大</button>
+	<button onclick="makeSmall()">缩小</button>
+	<button onclick="makeNormal()">正常</button>
+	<br>
+	<video id="video1" width="400" height="400">
+	  <source src="movie.mp4" type="video/mp4">
+	  您的浏览器不支持html5的video标签
+	  <source>
+	</video>
+	</div>
+	<div>
+	  <audio controls>
+	    <source src="horse.mp3" type="audio/mpeg">
+		<source src="horse.ogg" type="audio/ogg">
+		<source src="horse.wav" type="audio/wav">
+	    您的浏览器不支持html5的audio标签
+	  </audio>
+	</div>
+  </div>
+ </body>
+</html>
